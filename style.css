@@ -1,0 +1,219 @@
+:root {
+    font-size: 1vw;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vw;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    width: 85rem;
+}
+
+#logo {
+    width: 40%;
+    margin-left: 5em;
+    padding-bottom: 5em;
+}
+
+img#mobile-desktop-illustration {
+    width: 90%;
+    padding: 5em;
+}
+
+section.description-section {
+    color: white;
+}
+
+.paragraph-title {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 6.5rem;
+    width: 80%;
+    text-align: center;
+}
+
+.explanatory-paragraph {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    width: 83%;
+    text-align: center;
+    margin-top: -1em;
+}
+
+.register {
+    font-family: "family=Open+Sans", sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin-top: 0.5em;
+    width: 45%;
+    padding: .8em;
+    text-align: center;
+    border-radius: 70px;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+}
+
+.section-footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1.5px solid white;
+    margin-left: 1em;
+    border-radius: 50%;
+    margin-top: 2.5em;
+}
+
+.fa {
+    padding: .5em;
+    padding-top: .7em;
+    font-size: 3.5rem !important;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    
+}
+.attribution a {
+    color: hsla(7, 73%, 56%, 1);
+}
+
+/* for desktop */
+
+@media (min-width: 600px) {
+    body {
+        padding: 0;
+        background-color: white;
+        background-image: none;
+    }
+    
+    main.container {
+        width: 90%;
+        background-color: hsl(257, 40%, 49%);
+        background-image: url("images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+        flex-direction: row;
+    }
+    
+    section.header-section {
+        width: 45vw;
+    }
+    
+    header {
+        justify-content: center;
+    }
+    
+    #logo {
+        width: 15%;
+        margin-right: 25em;
+        margin-top: 3.5em;
+        padding: 0;
+    }   
+    
+    img#mobile-desktop-illustration {
+        width: 80%;
+        margin-left: 2em;
+    }
+    
+    section.description-section {
+        width: 45vw;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-top: 10em;
+    }
+    
+    .paragraph-title {
+        font-size: 2rem;
+        width: 60%;
+        text-align: start;
+    }
+    
+    .explanatory-paragraph {
+        font-size: 1.15rem;
+        text-align: start
+    }
+    .register {
+        font-size: 1.2rem;
+        width: 25%;
+    }
+    
+    .icons {
+        margin-left: 20em;
+        margin-bottom: 5em;
+    }
+    
+    i {
+        border: 1px solid white;
+    }
+    
+    .fa {
+        font-size: 1rem !important;
+        width: 3rem;
+        height: 2rem;
+        padding: .1em;
+        padding-top: 1em;
+        padding-bottom: -3em;
+        margin-left: 1.5em;
+    }
+    
+    .register:hover {
+        background-color: hsl(300, 69%, 71%);
+        border: 2px solid hsl(257, 40%, 49%);
+        box-shadow: 1px 1px 6px -2px hsl(257, 40%, 49%);
+        color: white;
+    }
+    
+    .fa:hover {
+        color: hsl(300, 69%, 71%);
+        border-color: hsl(300, 69%, 71%);
+    }
+    
+}
