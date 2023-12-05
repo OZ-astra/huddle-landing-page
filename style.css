@@ -109,10 +109,10 @@ i {
 }
 
 .fa {
-    padding: .5em;
-    padding-top: .7em;
+    padding-top: .5em;
     font-size: 3.5rem !important;
-
+    width: 7rem;
+    height: 5rem;
 }
 
 .attribution {
